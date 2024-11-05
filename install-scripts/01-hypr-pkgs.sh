@@ -8,7 +8,29 @@
 
 # add packages wanted here
 Extra=(
-
+  spotify-launcher
+  solaar
+  vesktop
+  audacity
+  bitwarden
+  cifs-utils
+  brave-bin
+  heroic-games-launcher-bin
+  hyprgui
+  krita
+  obs-studio
+  pavucontrol
+  spicetify-cli
+  spicetify-marketplace-bin
+  steam
+  steamtinkerlaunch
+  thunar-shares-plugin
+  timeshift
+  wlrobs-hg
+  lutris
+  thunderbird
+  handbrake
+  modrinth-app
 )
 
 hypr_package=( 
