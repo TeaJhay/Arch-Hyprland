@@ -112,7 +112,7 @@ https://github.com/JaKooLit/Hyprland-Dots/assets/85185940/50d53755-0f11-45d6-991
 - Without base-devel installed, script will fail
 
 ```bash
-git clone --depth=1 https://github.com/JaKooLit/Arch-Hyprland.git ~/Arch-Hyprland
+git clone --depth=1 https://github.com/TeaJhay/Arch-Hyprland.git ~/Arch-Hyprland
 cd ~/Arch-Hyprland
 chmod +x install.sh
 ./install.sh
