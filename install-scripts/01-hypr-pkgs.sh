@@ -39,7 +39,7 @@ Extra=(
 )
 
 Flat=(
-
+  io.github.Soundux
 )
 
 #Above are packages for my setup and below are packages for system and JaKooLit's config. Below shouldn't be touched to ensure sync works and system is up-to-date with all needed utilities 
@@ -151,6 +151,18 @@ for PKG1 in "${hypr_package[@]}" "${hypr_package_2[@]}" "${Extra[@]}"; do
     exit 1
   fi
 done
+
+for PKG2 in "${Flat[@]}"; do
+  # Install the Flatpak package from the flathub repo
+  flatpak install -y flathub "$PKG2" 2>&1 | tee -a "$LOG"
+  
+  # Check if the installation failed
+  if [ $? -ne 0 ]; then
+    echo -e "\e[1A\e[K${ERROR} - $PKG2 package installation failed. Please check the installation logs."
+    exit 1
+  fi
+done
+
 
 clear
 
