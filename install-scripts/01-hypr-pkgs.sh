@@ -31,7 +31,18 @@ Extra=(
   thunderbird
   handbrake
   modrinth-app
+  gnome-disk-utility
+  gvfs-afc
+  gvfs-smb
+  gvfs-wsdd
+  flatpak
 )
+
+Flat=(
+
+)
+
+#Above are packages for my setup and below are packages for system and JaKooLit's config. Below shouldn't be touched to ensure sync works and system is up-to-date with all needed utilities 
 
 hypr_package=( 
   aylurs-gtk-shell
