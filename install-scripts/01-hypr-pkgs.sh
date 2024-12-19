@@ -46,7 +46,7 @@ Flat=(
 #Above are packages for my setup and below are packages for system and JaKooLit's config. Below shouldn't be touched to ensure sync works and system is up-to-date with all needed utilities 
 
 hypr_package=( 
-  aylurs-gtk-shell
+  #aylurs-gtk-shell
   cliphist
   curl 
   grim 
@@ -103,8 +103,9 @@ hypr_package_2=(
   yt-dlp
 )
 
-# List of packages to uninstall as it conflicts with swaync and rofi-wayland
+# List of packages to uninstall as it conflicts some packages
 uninstall=(
+  aylurs-gtk-shell
   dunst
   mako
   rofi
