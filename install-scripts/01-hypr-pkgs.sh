@@ -7,19 +7,20 @@
 # and also, ensure that packages are present in AUR and official Arch Repo
 
 # add packages wanted here
+# #$ means I am moving these to flatpak. Switching over to QT/KDE based setup wtih flatpak used when reasonable
 Extra=(
-  spotify-launcher
+  #$spotify-launcher
   solaar
-  vesktop
-  audacity
+  #$vesktop
+  #$audacity
   bitwarden
   cifs-utils
   brave-bin
   heroic-games-launcher-bin
   hyprgui
-  krita
+  #$krita
   obs-studio
-  pavucontrol
+  pwvucontrol
   spicetify-cli
   spicetify-marketplace-bin
   steam
@@ -28,13 +29,13 @@ Extra=(
   timeshift
   wlrobs-hg
   lutris
-  thunderbird
+  #$thunderbird
   handbrake
   modrinth-app
-  gnome-disk-utility
-  gvfs-afc
-  gvfs-smb
-  gvfs-wsdd
+  gparted
+  #gvfs-afc
+  #gvfs-smb
+  #gvfs-wsdd
   flatpak
 )
 
@@ -90,15 +91,15 @@ hypr_package_2=(
   cava
   eog
   fastfetch
-  gnome-system-monitor
-  mousepad 
+  #gnome-system-monitor
+  #mousepad 
   mpv
   mpv-mpris 
   nvtop
   nwg-look
   pacman-contrib
-  qalculate-gtk
-  vim
+  #qalculate-gtk
+  neovim
   yt-dlp
 )
 
