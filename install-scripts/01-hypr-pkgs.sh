@@ -36,7 +36,8 @@ Extra=(
   kwallet
   kwalletmanager
   kwallet-pam
-
+  clipboard-sync
+  qpwgraph
 )
 
 Flat=(
@@ -46,6 +47,7 @@ Flat=(
   org.audacityteam.Audacity
   org.kde.krita
   org.mozilla.Thunderbird
+  com.github.wwmm.easyeffects
   )
 
 #Above are packages for my setup and below are packages for system and JaKooLit's config. Below shouldn't be touched to ensure sync works and system is up-to-date with all needed utilities 
