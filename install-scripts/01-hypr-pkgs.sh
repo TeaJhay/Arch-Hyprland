@@ -37,83 +37,57 @@ Extra=(
   #gvfs-smb
   #gvfs-wsdd
   flatpak
-<<<<<<< HEAD
-  kwallet
-  kwalletmanager
-  kwallet-pam
-  kded6
-  clipboard-sync
-  qpwgraph
-=======
->>>>>>> parent of 2d0bc4f (Update 01-hypr-pkgs.sh)
 )
 
 Flat=(
   io.github.Soundux
-<<<<<<< HEAD
-  com.spotify.Client
-  dev.vencord.Vesktop
-  org.audacityteam.Audacity
-  org.kde.krita
-  org.mozilla.Thunderbird
-  com.github.wwmm.easyeffects
-  )
-=======
 )
->>>>>>> parent of 2d0bc4f (Update 01-hypr-pkgs.sh)
 
-#Above are packages for my setup and below are packages for system and JaKooLit's config. Below shouldn't be touched to ensure sync works and system is up-to-date with all needed utilities 
+#Above are packages for my setup and below are packages for system and JaKooLit's config. Below shouldn't be touched to ensure sync works and system is up-to-date with all needed utilities
 
-hypr_package=( 
-  #aylurs-gtk-shell
+hypr_package=(
+  aylurs-gtk-shell
   cliphist
-  curl 
-  grim 
-  gvfs 
+  curl
+  grim
+  gvfs
   gvfs-mtp
   imagemagick
-  inxi 
+  inxi
   jq
   kitty
   kvantum
-  nano  
-  network-manager-applet 
-  pamixer 
-  pavucontrol
-  pipewire-alsa 
-  playerctl
-  polkit-gnome
-  python-requests
-  python-pyquery
-  qt5ct
-  qt6ct
+  nano
+  network-manager-applet
+
+@@ -70,35 +71,35 @@
   qt6-svg
   rofi-wayland
-  slurp 
-  swappy 
-  swaync 
+  slurp
+  swappy
+  swaync
   swww
-  wallust 
+  wallust
   waybar
   wget
   wl-clipboard
   wlogout
   xdg-user-dirs
-  xdg-utils 
+  xdg-utils
   yad
 )
 
 # the following packages can be deleted. however, dotfiles may not work properly
 hypr_package_2=(
-  brightnessctl 
+  brightnessctl
   btop
   cava
   eog
   fastfetch
   #gnome-system-monitor
-  #mousepad 
+  #mousepad
   mpv
-  mpv-mpris 
+  mpv-mpris
   nvtop
   nwg-look
   pacman-contrib
@@ -121,6 +95,7 @@ hypr_package_2=(
   neovim
   yt-dlp
 )
+
 
 # List of packages to uninstall as it conflicts some packages
 uninstall=(
