@@ -11,8 +11,6 @@
 Extra=(
   #$spotify-launcher
   solaar
-  vulkan-radeon
-  lib32-vulkan-radeon
   #$vesktop
   #$audacity
   bitwarden
