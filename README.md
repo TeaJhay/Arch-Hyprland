@@ -1,3 +1,7 @@
+This is a fork of the scripts created by [JaKooLit](https://github.com/JaKooLit). This is intended to be used by me to install all apps and software I need for a clean desktop installation.
+<br>
+<br>
+<br>
 <div align="center">
 <br>
   <a href="#-announcement-"><kbd> <br> Read this First <br> </kbd></a>&ensp;&ensp;
