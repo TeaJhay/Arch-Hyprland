@@ -9,15 +9,20 @@
 # add packages wanted here
 # #$ means I am moving these to flatpak. Switching over to QT/KDE based setup wtih flatpak used when reasonable
 Extra=(
+  #$spotify-launcher
   solaar
   vulkan-radeon
   lib32-vulkan-radeon
+  #$vesktop
+  #$audacity
   bitwarden
   cifs-utils
   brave-bin
   heroic-games-launcher-bin
   hyprgui
+  #$krita
   obs-studio
+  pwvucontrol
   spicetify-cli
   spicetify-marketplace-bin
   steam
@@ -26,6 +31,7 @@ Extra=(
   timeshift
   wlrobs-hg
   lutris
+  #$thunderbird
   handbrake
   modrinth-app
   gparted
@@ -33,16 +39,20 @@ Extra=(
   #gvfs-smb
   #gvfs-wsdd
   flatpak
+<<<<<<< HEAD
   kwallet
   kwalletmanager
   kwallet-pam
   kded6
   clipboard-sync
   qpwgraph
+=======
+>>>>>>> parent of 2d0bc4f (Update 01-hypr-pkgs.sh)
 )
 
 Flat=(
   io.github.Soundux
+<<<<<<< HEAD
   com.spotify.Client
   dev.vencord.Vesktop
   org.audacityteam.Audacity
@@ -50,6 +60,9 @@ Flat=(
   org.mozilla.Thunderbird
   com.github.wwmm.easyeffects
   )
+=======
+)
+>>>>>>> parent of 2d0bc4f (Update 01-hypr-pkgs.sh)
 
 #Above are packages for my setup and below are packages for system and JaKooLit's config. Below shouldn't be touched to ensure sync works and system is up-to-date with all needed utilities 
 
@@ -68,7 +81,7 @@ hypr_package=(
   nano  
   network-manager-applet 
   pamixer 
-  pwvucontrol
+  pavucontrol
   pipewire-alsa 
   playerctl
   polkit-gnome
