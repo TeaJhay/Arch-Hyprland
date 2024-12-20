@@ -85,8 +85,8 @@ hypr_package=(
   polkit-gnome
   python-requests
   python-pyquery
-  #qt5ct
-  #qt6ct
+  qt5ct
+  qt6ct
   qt6-svg
   rofi-wayland
   slurp 
