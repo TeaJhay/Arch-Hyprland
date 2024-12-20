@@ -36,6 +36,7 @@ Extra=(
   kwallet
   kwalletmanager
   kwallet-pam
+  kded6
   clipboard-sync
   qpwgraph
 )
