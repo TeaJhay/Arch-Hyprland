@@ -29,7 +29,7 @@ ags="ON"
 ###-Install & configure SDDM log-in Manager
 sddm="ON"
 ### install and download SDDM themes
-sddm_theme="ON"
+sddm_theme="OFF"
 
 ###-Install XDG-DESKTOP-PORTAL-HYPRLAND? (For proper Screen Share ie OBS)
 xdph="ON"
