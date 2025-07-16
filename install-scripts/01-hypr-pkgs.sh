@@ -5,10 +5,31 @@
 # edit your packages desired here. 
 # WARNING! If you remove packages here, dotfiles may not work properly.
 # and also, ensure that packages are present in AUR and official Arch Repo
+# -------- FLATPAK HANDLING BLOCK BELOW --------
 
+flatpak_packages=(
+  com.heroicgameslauncher.hgl
+  # Add IDs for other Flatpaks, e.g. "com.heroicgameslauncher.hgl"
+)
+
+if ! command -v flatpak &>/dev/null; then
+  echo "Flatpak not found, installing..."
+  sudo pacman -S --noconfirm flatpak
+fi
+
+if ! flatpak remote-list | grep -q flathub; then
+  flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+fi
+
+for FP in "${flatpak_packages[@]}"; do
+  flatpak install -y --or-update flathub "$FP"
+done
+
+# ----------------------------------------------
 # add packages wanted here
 Extra=(
-
+  steam
+  bauh
 )
 
 hypr_package=( 
