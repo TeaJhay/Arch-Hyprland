@@ -46,11 +46,11 @@ hypr_package=(
   jq
   kitty
   kvantum
+  libspng
   nano  
   network-manager-applet 
   pamixer 
   pavucontrol
-  pipewire-alsa 
   playerctl
   python-requests
   python-pyquery
@@ -96,8 +96,8 @@ hypr_package_2=(
 uninstall=(
   aylurs-gtk-shell
   dunst
-  mako
   cachyos-hyprland-settings
+  mako
   rofi
   wallust-git
   rofi-lbonn-wayland

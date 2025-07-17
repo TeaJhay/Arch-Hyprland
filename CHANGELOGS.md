@@ -1,5 +1,19 @@
 ## CHANGELOGS
 
+## 08 June 2025
+- updated SDDM theme. 
+
+## 20 March 2025
+- adjusted hyprland installation script. This is great for those who are using -git packages
+- added findutils as dependencies
+
+## 11 March 2025
+- Added uninstall script
+- forked AGS v1 into JakooLit repo. This is just incase Aylur decide to take down v1
+
+## 10 March 2025
+- Dropped pyprland in favor of hyprland built in tool for a drop down like terminal and Desktop magnifier
+
 ## 06 March 2025
 - Switched to whiptail version for Y & N questions
 - switched eza to lsd

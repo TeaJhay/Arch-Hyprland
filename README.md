@@ -6,7 +6,7 @@
   <img src="https://raw.githubusercontent.com/JaKooLit/Hyprland-Dots/main/assets/latte.png" width="400" />
 </p>
 
-![GitHub Repo stars](https://img.shields.io/github/stars/JaKooLit/Arch-Hyprland?style=for-the-badge&color=cba6f7) ![GitHub last commit](https://img.shields.io/github/last-commit/JaKooLit/Arch-Hyprland?style=for-the-badge&color=b4befe) ![GitHub repo size](https://img.shields.io/github/repo-size/JaKooLit/Arch-Hyprland?style=for-the-badge&color=cba6f7) <a href="https://discord.gg/9JEgZsfhex"> <img src="https://img.shields.io/discord/1151869464405606400?style=for-the-badge&logo=discord&color=cba6f7&link=https%3A%2F%2Fdiscord.gg%9JEgZsfhex"> </a>
+![GitHub Repo stars](https://img.shields.io/github/stars/JaKooLit/Arch-Hyprland?style=for-the-badge&color=cba6f7) ![GitHub last commit](https://img.shields.io/github/last-commit/JaKooLit/Arch-Hyprland?style=for-the-badge&color=b4befe) ![GitHub repo size](https://img.shields.io/github/repo-size/JaKooLit/Arch-Hyprland?style=for-the-badge&color=cba6f7) <a href="https://discord.gg/kool-tech-world"> <img src="https://img.shields.io/discord/1151869464405606400?style=for-the-badge&logo=discord&color=cba6f7&link=https%3A%2F%2Fdiscord.gg%kool-tech-world"> </a>
 
 
 <br/>
@@ -34,7 +34,7 @@
   <a href="https://github.com/JaKooLit/Hyprland-Dots/wiki"><kbd> <br> Wiki <br> </kbd></a>&ensp;&ensp;
   <a href="https://github.com/JaKooLit/Hyprland-Dots/wiki/Keybinds"><kbd> <br> Keybinds <br> </kbd></a>&ensp;&ensp;
   <a href="https://github.com/JaKooLit/Hyprland-Dots/wiki/FAQ"><kbd> <br> FAQ <br> </kbd></a>&ensp;&ensp;
-  <a href="https://discord.gg/9JEgZsfhex"><kbd> <br> Discord <br> </kbd></a>
+  <a href="https://discord.gg/kool-tech-world"><kbd> <br> Discord <br> </kbd></a>
 </div><br>
 
 <p align="center">
@@ -66,10 +66,7 @@ https://github.com/user-attachments/assets/49bc12b2-abaf-45de-a21c-67aacd9bb872
 - the wallpaper offered to be downloaded towards the end is from this [`REPO`](https://github.com/JaKooLit/Wallpaper-Bank)
 
 > [!IMPORTANT]
-> install a backup tool like `snapper` or `timeshift`. and Backup your system before installing hyprland using this script. This script does NOT include uninstallation of packages
-
-> [!NOTE]
-> Main reason why I have not included an uninstallation script is simple. Some packages maybe already installed on your system by default. If I create an uninstall script with packages that I have set to install, you may end up a unrecoverable system. 
+> install a backup tool like `snapper` or `timeshift`. and Backup your system before installing hyprland using this script (HIGHLY RECOMMENDED)
 
 > [!CAUTION] 
 > Download this script on a directory where you have write permissions. ie. HOME. Or any directory within your home directory. Else script will fail
@@ -84,19 +81,29 @@ https://github.com/user-attachments/assets/49bc12b2-abaf-45de-a21c-67aacd9bb872
 #### ✨ Customize the packages to be installed
 - inside the install-scripts directory, you can edit 00-hypr-pkgs.sh. Care though as the Hyprland Dots may not work properly!
 
+#### 🚩 Switching to SDDM assuming you have GDM installed and running
+- if you really want switch to SDDM from GDM, you need to disable the gdm first.
+- `sudo systemctl disable gdm.service` then reboot
+- after reboot, need to ran the install script via tty. So suggest download the install script first. Then disable gdm. reboot and once logged in, cd into Distro-Hyprland then `./install.sh` and then choose SDDM and SDDM theme in the options. 
+- NOTE: Distro-Hyprland is Arch-Hyprland, or Fedora-Hyprland .. depends on which install scripts you downloaded.
+
+
 #### 💫 SDDM and GTK Themes offered
-- If you opted to install SDDM theme, here's the [`LINK`](https://codeberg.org/JaKooLit/sddm-sequoia) which is a fork of [`LINK`](https://codeberg.org/minMelody/sddm-sequoia)
+- If you opted to install SDDM theme, here's the [`LINK`](https://github.com/JaKooLit/simple-sddm-2) which is a modified fork of [`LINK`](https://github.com/Keyitdev/sddm-astronaut-theme)
 - If you opted to install GTK Themes, Icons,  here's the [`LINK`](https://github.com/JaKooLit/GTK-themes-icons). This also includes Bibata Modern Ice cursor.
 
 #### 👀 NVidia GPU Owners.
 - By default, nvidia-dkms will be installed. and only supports GTX 900 and newer. If required to install older driver, edit the nvidia.sh in install-scripts directory
 
 > [!IMPORTANT]
-> If you want to use nouveau driver, choose N when asked if you have nvidia gpu. This is because the nvidia installer part, it will blacklist nouveau. Hyprland will still be installed but it will skip blacklisting nouveau.
+> If you want to use nouveau driver, dont choose nvidia in the option. This is because the nvidia installer part, it will blacklist nouveau. Hyprland will still be installed but it will skip blacklisting nouveau.
 
 - After installation, check [`THIS`](https://github.com/JaKooLit/Hyprland-Dots/wiki/Notes_to_remember#--for-nvidia-gpu-users)
 
 ## ✨ Auto clone and install
+> [!CAUTION] 
+> If you are using FISH SHELL, DO NOT use this function. Clone and ran install.sh instead
+
 - you can use this command to automatically clone the installer and ran the script for you
 - NOTE: `curl` package is required before running this command
 ```bash
@@ -112,6 +119,11 @@ cd ~/Arch-Hyprland
 chmod +x install.sh
 ./install.sh
 ```
+
+### 💥 💥  UNINSTALL SCRIPT / Removal of Config Files
+- 11 March 2025, due to popular request, created a guided `uninstall.sh` script. USE this with caution as it may render your system unstable.
+- I will not be responsible if your system breaks
+- The best still to revert to previous state of your system is via `timeshift or snapper`
 
 #### ✨ for ZSH and OH-MY-ZSH installation
 > installer should auto change your default shell to zsh. However, if it does not, do this
@@ -199,16 +211,16 @@ env = WLR_RENDERER_ALLOW_SOFTWARE,1
   - [`SEE HERE`](https://github.com/JaKooLit/Hyprland-Dots/discussions/123#discussion-6035205)
 
 #### 📒 Final Notes
-- join my discord channel [`Discord`](https://discord.com/invite/9JEgZsfhex)
+- join my discord channel [`Discord`](https://discord.com/invite/kool-tech-world)
 - Feel free to copy, re-distribute, and use this script however you want. Would appreciate if you give me some loves by crediting my work :)
 
 
 
-#### ⏩ Contributing
+#### ✍️ Contributing
 - As stated above, these script does not contain actual config files. These are only the installer of packages
-- The development branch of this script is pulling the latest "stable" releases of the Hyprland-Dotfiles.
-- If you want to contribute and/or test the Hyprland-Dotfiles (development branch), [`Hyprland-Dots-Development`](https://github.com/JaKooLit/Hyprland-Dots/tree/development) 
-
+- If you want to contribute and/or test the Hyprland-Dotfiles (development branch), [`Hyprland-Dots-Development`](https://github.com/JaKooLit/Hyprland-Dots/tree/development)
+- Want to contribute on KooL-Hyprland-Dots Click [`HERE`](https://github.com/JaKooLit/Hyprland-Dots/blob/main/CONTRIBUTING.md) for a guide how to contribute
+- Want to contribute on This Installer? Click [`HERE`](https://github.com/JaKooLit/Arch-Hyprland/blob/main/CONTRIBUTING.md) for a guide how to contribute
 
 #### 👍👍👍 Thanks and Credits!
 - [`Hyprland`](https://hyprland.org/) Of course to Hyprland and @vaxerski for this awesome Dynamic Tiling Manager.
