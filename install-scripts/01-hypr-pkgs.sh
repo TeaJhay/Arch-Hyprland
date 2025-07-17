@@ -9,6 +9,9 @@
 
 flatpak_packages=(
   com.heroicgameslauncher.hgl
+  org.kde.krita
+  com.bitwarden.desktop
+  
   # Add IDs for other Flatpaks, e.g. "com.heroicgameslauncher.hgl"
 )
 
