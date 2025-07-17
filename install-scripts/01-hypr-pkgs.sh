@@ -11,7 +11,8 @@ flatpak_packages=(
   com.heroicgameslauncher.hgl
   org.kde.krita
   com.bitwarden.desktop
-  
+  com.modrinth.ModrinthApp
+  org.prismlauncher.PrismLauncher
   # Add IDs for other Flatpaks, e.g. "com.heroicgameslauncher.hgl"
 )
 
@@ -33,6 +34,11 @@ done
 Extra=(
   steam
   bauh
+  Librewolf
+  ftb-app
+  baobab
+  dconf-editor
+  
 )
 
 hypr_package=( 
