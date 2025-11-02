@@ -1,15 +1,37 @@
 #!/usr/bin/env bash
 
-#Package instaklls, put packages in packages-extra.txt
 set -euo pipefail
-
-PKG_FILE="${1:-packages.txt}"     # allow passing a custom file
-GIT_TARGET_DIR="${GIT_TARGET_DIR:-$HOME/Code}"  # can be overridden: GIT_TARGET_DIR=/opt ./install-from-list.sh
 
 # ---------- helpers ----------
 err()  { printf "\e[31m[ERR]\e[0m %s\n" "$*" >&2; }
 ok()   { printf "\e[32m[OK]\e[0m %s\n" "$*"; }
 info() { printf "\e[33m[INFO]\e[0m %s\n" "$*"; }
+
+# ---------- THEME (Sweet-Dark-v40 from Pling via ocs-url) ----------
+# Sweet GTK (Pling ID: 1253385)
+# Sweet KDE Plasma (Pling ID: 1294174)
+# Sweet KDE Kvantum (Pling ID: 1294013)
+if command -v ocs-url >/dev/null 2>&1; then
+  info "Installing Sweet-Dark-v40 (GTK) from Pling with ocs-url…"
+  ocs-url "ocs://install?url=https://www.pling.com/p/1253385/"
+
+  info "Installing Sweet KDE Kvantum theme from Pling with ocs-url…"
+  ocs-url "ocs://install?url=https://www.pling.com/p/1294013/"
+
+  info "Installing Sweet KDE Plasma theme from Pling with ocs-url…"
+  ocs-url "ocs://install?url=https://www.pling.com/p/1294174/"
+else
+  err "ocs-url not found — falling back to direct download for GTK part."
+  mkdir -p ~/.local/share/themes
+  wget -O Sweet-Dark-v40.tar.xz "https://github.com/EliverLara/Sweet/releases/download/v6.0/Sweet-Dark-v40.tar.xz"
+  tar -xf Sweet-Dark-v40.tar.xz -C ~/.local/share/themes/
+  ok "Sweet-Dark-v40 (GTK) installed locally."
+  info "If you want the QT/KDE stuff too: sudo pacman -S ocs-url  (or your distro equiv) and re-run."
+fi
+
+# ---------- PACKAGE LIST STUFF ----------
+PKG_FILE="${1:-packages.txt}"     # allow passing a custom file
+GIT_TARGET_DIR="${GIT_TARGET_DIR:-$HOME/Code}"  # can be overridden: GIT_TARGET_DIR=/opt ./install-from-list.sh
 
 if [[ ! -f "$PKG_FILE" ]]; then
   err "Package file '$PKG_FILE' not found."
@@ -117,12 +139,10 @@ fi
 if ((${#git_repos[@]})); then
   info "Cloning git repos into $GIT_TARGET_DIR"
   for entry in "${git_repos[@]}"; do
-    # split into URL and optional target directory
     repo_url="$(awk '{print $1}' <<<"$entry")"
     repo_dir="$(awk '{print $2}' <<<"$entry")"
 
     if [[ -z "$repo_dir" ]]; then
-      # derive from repo name if no custom dir given
       repo_dir="$(basename "$repo_url" .git)"
     fi
 
