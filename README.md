@@ -254,7 +254,7 @@ env = WLR_RENDERER_ALLOW_SOFTWARE,1
 
 #### 📒 Final Notes
 
-- join my discord channel [`Discord`](https://discord.com/invite/kool-tech-world)
+- join my discord channel [`Discord`](https://discord.gg/RZJgC7KAKm)
 - Feel free to copy, re-distribute, and use this script however you want. Would appreciate if you give me some loves by crediting my work :)
 
 #### ✍️ Contributing
