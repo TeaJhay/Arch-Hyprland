@@ -16,7 +16,7 @@
   <img src="https://raw.githubusercontent.com/TeaJhay/Hyprland-Dots/main/assets/latte.png" width="400" />
 </p>
 
-![GitHub Repo stars](https://img.shields.io/github/stars/TeaJhay/Arch-Hyprland?style=for-the-badge&color=cba6f7) ![GitHub last commit](https://img.shields.io/github/last-commit/TeaJhay/Arch-Hyprland?style=for-the-badge&color=b4befe) ![GitHub repo size](https://img.shields.io/github/repo-size/TeaJhay/Arch-Hyprland?style=for-the-badge&color=cba6f7) <a href="https://discord.gg/kool-tech-world"> <img src="https://img.shields.io/discord/1151869464405606400?style=for-the-badge&logo=discord&color=cba6f7&link=https%3A%2F%2Fdiscord.gg%kool-tech-world"> </a>
+![GitHub Repo stars](https://img.shields.io/github/stars/TeaJhay/Arch-Hyprland?style=for-the-badge&color=cba6f7) ![GitHub last commit](https://img.shields.io/github/last-commit/TeaJhay/Arch-Hyprland?style=for-the-badge&color=b4befe) ![GitHub repo size](https://img.shields.io/github/repo-size/TeaJhay/Arch-Hyprland?style=for-the-badge&color=cba6f7)
 
 <br/>
 </div>
@@ -61,6 +61,16 @@
 https://github.com/user-attachments/assets/49bc12b2-abaf-45de-a21c-67aacd9bb872
 
 </div>
+
+### TO-DO LIST (TeaJhay)
+
+- Change swww to awww
+- Add hyprpaper & mpvpaper authoritative script to allow video and monitor specific wallpapers
+- fix pkexec/polkit/timeshift (specifically for my setup)
+- include NvChad installation
+- adjust and fix soome gaming specific stuff (pls playnite 2026)
+- other various configuration choices (keybinds, firefox, thunderbird, etc)
+
 
 ### Gallery and Videos
 
