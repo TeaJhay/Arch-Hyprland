@@ -46,21 +46,6 @@
   <a href="https://discord.gg/kool-tech-world"><kbd> <br> Discord <br> </kbd></a>
 </div><br>
 
-<p align="center">
-  <img src="https://raw.githubusercontent.com/TeaJhay/Hyprland-Dots/main/assets/latte.png" width="200" />
-</p>
-
-<h3 align="center">
-	<img src="https://github.com/TeaJhay/Telegram-Animated-Emojis/blob/main/Activity/Sparkles.webp" alt="Sparkles" width="38" height="38" />
-	KooL Hyprland-Dotfiles Showcase 
-	<img src="https://github.com/TeaJhay/Telegram-Animated-Emojis/blob/main/Activity/Sparkles.webp" alt="Sparkles" width="38" height="38" />
-</h3>
-
-<div align="center">
-
-https://github.com/user-attachments/assets/49bc12b2-abaf-45de-a21c-67aacd9bb872
-
-</div>
 
 ### TO-DO LIST (TeaJhay)
 
@@ -70,6 +55,8 @@ https://github.com/user-attachments/assets/49bc12b2-abaf-45de-a21c-67aacd9bb872
 - include NvChad installation
 - adjust and fix soome gaming specific stuff (pls playnite 2026)
 - other various configuration choices (keybinds, firefox, thunderbird, etc)
+- look into migrating from rofi to wofi and waybar to quickshell.
+- investigte radial menu options - similar to [SNMenu](https://github.com/Sleep-No-More/SNMenu) but for general options.
 
 
 ### Gallery and Videos
